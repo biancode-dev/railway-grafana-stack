@@ -10,6 +10,6 @@ scrape_configs:
     metrics_path: /metrics
     scheme: https
     tls_config:
-      insecure_skip_verify: false  # Set to true if you have certificate issues
+      insecure_skip_verify: true  # Temporarily enabling to test certificate issues
     static_configs:
       - targets: ['flow-pages-backend-production.up.railway.app']
